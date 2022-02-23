@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IdentityService.API</name>
+    </assembly>
+    <members>
+        <member name="T:IdentityService.API.Controllers.UsersController">
+            <summary>
+            Users Controller
+            </summary>
+        </member>
+        <member name="M:IdentityService.API.Controllers.UsersController.#ctor(IdentityService.Core.Interfaces.IUserRepository)">
+            <summary>
+            UsersController Constructor
+            </summary>
+            <param name="userRepository"></param>
+        </member>
+        <member name="M:IdentityService.API.Controllers.UsersController.GetUserByAplId(System.String)">
+            <summary>
+            Get User details by Apl id
+            </summary>
+            <param name="id"></param>
+            <returns>UserDetailsEntity</returns>
+        </member>
+        <member name="M:IdentityService.API.Controllers.UsersController.GetUserByUserId(System.Guid)">
+            <summary>
+            Get User details by guid id in base64 format
+            </summary>
+            <param name="id"></param>
+            
+            <returns>Base 64 Response</returns>
+        </member>
+        <member name="T:IdentityServicePOC.Program">
+            <summary>
+            Program class
+            </summary>
+        </member>
+        <member name="M:IdentityServicePOC.Program.Main(System.String[])">
+            <summary>
+            Main method
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:IdentityServicePOC.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            CreateWebHostBuilder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:IdentityServicePOC.Startup">
+            <summary>
+            Startup class
+            </summary>
+        </member>
+        <member name="M:IdentityServicePOC.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup Constructor
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:IdentityServicePOC.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:IdentityServicePOC.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
